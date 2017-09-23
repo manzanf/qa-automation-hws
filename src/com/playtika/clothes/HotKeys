@@ -1,0 +1,21 @@
+ctrl+shift+a find action
+ctrl+shift+I definition in separate window
+ctrl+e recent tabs
+alt+<number> - open tool window <number>
+alt+7 structure
+ctrl+F12 structure in separate window
+ctrl+shift+i quick definition
+alt+enter show intention action
+alt+ins generate code
+ctrl+w+w+w smart selection
+ctrl+shift+W untiselection
+ctrl+shift+alt+j select all occurrences
+shift+F6 rename
+ctrl+shift+Space smart completion
+ctrl+d duplicate line
+ctrl+shift+f10 run
+ctrl+alt+close bracket next project window
+ctrl+alt+L reformat code
+ctrl+p parameter info
+ctrl+alt+b implementation
+ctrl+b declaration
