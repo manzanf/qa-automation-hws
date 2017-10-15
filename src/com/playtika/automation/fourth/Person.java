@@ -1,4 +1,4 @@
-package com.playtika.fourth;
+package com.playtika.automation.fourth;
 
 class Person {
     private final String name;

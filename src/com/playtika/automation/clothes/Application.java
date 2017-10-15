@@ -1,9 +1,9 @@
-package com.playtika.clothes;
+package com.playtika.automation.clothes;
 
 import java.math.BigDecimal;
 
-import static com.playtika.clothes.Tissue.Origin.*;
-import static com.playtika.clothes.Tissue.Type.*;
+import static com.playtika.automation.clothes.Tissue.Origin.*;
+import static com.playtika.automation.clothes.Tissue.Type.*;
 
 public class Application {
     public static void main(String[] args) {

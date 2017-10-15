@@ -1,4 +1,4 @@
-package com.playtika.clothes;
+package com.playtika.automation.clothes;
 
 import java.math.BigDecimal;
 

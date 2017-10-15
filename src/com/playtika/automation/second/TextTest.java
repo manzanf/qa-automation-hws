@@ -1,4 +1,4 @@
-package com.playtika.second;
+package com.playtika.automation.second;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;

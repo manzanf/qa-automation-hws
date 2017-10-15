@@ -1,10 +1,6 @@
-package com.playtika.second;
+package com.playtika.automation.second;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 import static org.junit.Assert.*;
 

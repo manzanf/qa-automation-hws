@@ -1,8 +1,6 @@
-package com.playtika.second;
+package com.playtika.automation.second;
 
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 class Text {
     private final String text;

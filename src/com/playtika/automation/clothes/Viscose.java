@@ -1,4 +1,4 @@
-package com.playtika.clothes;
+package com.playtika.automation.clothes;
 
 class Viscose extends Tissue {
     private boolean ifMattingElementsAdded;
