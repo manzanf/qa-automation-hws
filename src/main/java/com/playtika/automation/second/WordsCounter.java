@@ -16,7 +16,6 @@ class WordsCounter {
         if (textWithOnlyWords.length > 0 && textWithOnlyWords[0].equals("")) {
             count = count - 1;
         }
-        System.out.println(Arrays.toString(textWithOnlyWords));
         return count;
     }
 }

@@ -1,4 +1,4 @@
-package com.playtika.automation.clothes;
+package com.playtika.automation.first;
 
 import java.math.BigDecimal;
 
@@ -30,7 +30,7 @@ class Dress extends Clothes {
     }
 
     BigDecimal calculatePrice() {
-        BigDecimal price = new BigDecimal(tissueQuantity * material.getValue() * (1+workComplexity));
+        BigDecimal price = new BigDecimal(tissueQuantity * material.getValue() * (1 + workComplexity));
         return price;
     }
 }

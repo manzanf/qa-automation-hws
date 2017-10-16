@@ -1,4 +1,4 @@
-package com.playtika.automation.clothes;
+package com.playtika.automation.first;
 
 class Cotton extends Tissue {
     private double fiberLength;
