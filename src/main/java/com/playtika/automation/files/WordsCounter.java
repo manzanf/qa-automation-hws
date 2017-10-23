@@ -1,6 +1,4 @@
-package com.playtika.automation.second;
-
-import java.util.Arrays;
+package com.playtika.automation.files;
 
 class WordsCounter {
 

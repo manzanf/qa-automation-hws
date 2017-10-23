@@ -1,4 +1,4 @@
-package com.playtika.automation.first;
+package com.playtika.automation.clothes;
 
 class Fur extends Tissue {
     private double pileThickness;

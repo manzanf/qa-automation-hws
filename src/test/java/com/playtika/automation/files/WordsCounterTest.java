@@ -1,8 +1,8 @@
-package com.playtika.automation.second;
+package com.playtika.automation.files;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class WordsCounterTest {
 

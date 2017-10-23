@@ -1,9 +1,10 @@
-package com.playtika.automation.first;
+package com.playtika.automation.clothes;
 
 import java.math.BigDecimal;
 
-import static com.playtika.automation.first.Tissue.Origin.*;
-import static com.playtika.automation.first.Tissue.Type.*;
+import static com.playtika.automation.clothes.Tissue.Origin.*;
+import static com.playtika.automation.clothes.Tissue.Type.mixed;
+import static com.playtika.automation.clothes.Tissue.Type.natural;
 
 public class Application {
     public static void main(String[] args) {

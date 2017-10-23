@@ -1,4 +1,4 @@
-package com.playtika.automation.fourth;
+package com.playtika.automation.files;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;

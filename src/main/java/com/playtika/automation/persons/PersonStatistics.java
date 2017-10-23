@@ -1,4 +1,4 @@
-package com.playtika.automation.fourth;
+package com.playtika.automation.persons;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,10 +1,10 @@
-package com.playtika.automation.fourth;
+package com.playtika.automation.files;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import static java.util.function.Function.*;
+import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.*;
 
 class Text {
