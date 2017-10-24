@@ -1,0 +1,21 @@
+<?xml version ="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Full Test Suite">
+    <test name="All Tests">
+        <groups>
+            <define name="all">
+                <include name="getTopWordsChecks"/>
+                <include name="getFrequenciesChecks"/>
+                <include name="getLengthInCharsChecks"/>
+            </define>
+            <run>
+                <include name="all"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.playtika.automation.files.TextTestNG"/>
+        </classes>
+    </test>
+</suite>
+

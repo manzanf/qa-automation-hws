@@ -1,5 +1,8 @@
 package com.playtika.automation.files;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -13,11 +16,12 @@ import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
 
 class FilesProcessor {
+    private static final Logger logger = LogManager.getLogger(FilesProcessor.class);
 
     public static void main(String[] args) throws IOException {
         File dir = new File("processedDir");
         if (!dir.isDirectory() || dir.listFiles() == null) {
-            System.out.println("Target path is not a directory");
+            logger.warn("Target path is not a directory");
             return;
         }
         for (File file : dir.listFiles()) {
@@ -26,15 +30,13 @@ class FilesProcessor {
             }
             printFileInfo(file);
         }
-
-        System.out.println("Aggregated words' frequency is:\n" + getWordsFrequenciesInDir(dir));
-
+        logger.info("Aggregated words' frequency is:\n" + getWordsFrequenciesInDir(dir));
         File sourceFile = new File(dir, "file.txt");
         File destinationFile = new File(dir, "file_copy.txt");
         try {
             copyFile(sourceFile, destinationFile);
         } catch (IOException e) {
-            System.out.println("Copying of the file is failed");
+            logger.error("Copying of the file is failed");
             e.printStackTrace();
         }
     }
@@ -43,7 +45,7 @@ class FilesProcessor {
         try {
             return new String(Files.readAllBytes(path));
         } catch (IOException e) {
-            System.out.println("The file cannot be processed: " + path);
+            logger.error("The file cannot be processed: " + path);
             e.printStackTrace();
             return "";
         }
@@ -61,10 +63,9 @@ class FilesProcessor {
     private static void printFileInfo(File file) {
         try {
             FileTime fileCreationDate = (FileTime) Files.getAttribute(file.toPath(), "basic:creationTime");
-            System.out.println(String.format("The file %s has %s bytes size and was created at %s",
-                    file.getPath(), file.length(), fileCreationDate));
+            logger.info(String.format("The file %s has %s bytes size and was created at %s", file.getPath(), file.length(), fileCreationDate));
         } catch (IOException e) {
-            System.out.println("Can't return info for " + file.getPath());
+            logger.error("Can't return info for " + file.getPath());
         }
     }
 

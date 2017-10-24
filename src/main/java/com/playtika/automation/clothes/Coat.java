@@ -1,5 +1,8 @@
 package com.playtika.automation.clothes;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.math.BigDecimal;
 
 class Coat extends Clothes {
@@ -7,6 +10,8 @@ class Coat extends Clothes {
     private Tissue lining;
     private double coverQuantity;
     private double liningQuantity;
+
+    private static final Logger logger = LogManager.getLogger(Application.class);
 
     Coat(String size, Tissue cover, Tissue lining, double workComplexity, double coverQuantity, double liningQuantity) {
         this.size = size;
@@ -18,17 +23,17 @@ class Coat extends Clothes {
     }
 
     void sew() {
-        System.out.println("The coat is sewing:");
+        logger.info("The coat is sewing:");
         joinFurAndLining();
         addChain();
     }
 
     private void addChain() {
-        System.out.println("Chain was added");
+        logger.info("Chain was added");
     }
 
     private void joinFurAndLining() {
-        System.out.println("Fur and lining were joined");
+        logger.info("Fur and lining were joined");
     }
 
     BigDecimal calculatePrice() {
@@ -37,6 +42,6 @@ class Coat extends Clothes {
     }
 
     void chooseMatchedBelt() {
-        System.out.println("The matched belt was chosen");
+        logger.info("The matched belt was chosen");
     }
 }
