@@ -1,7 +1,7 @@
 package com.playtika.automation.clothes;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
@@ -11,7 +11,7 @@ class Coat extends Clothes {
     private double coverQuantity;
     private double liningQuantity;
 
-    private static final Logger logger = LogManager.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     Coat(String size, Tissue cover, Tissue lining, double workComplexity, double coverQuantity, double liningQuantity) {
         this.size = size;

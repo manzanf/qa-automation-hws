@@ -1,7 +1,7 @@
 package com.playtika.automation.clothes;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ class Dress extends Clothes {
     private double tissueQuantity;
     private String color;
 
-    private static final Logger logger = LogManager.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     Dress(String size, Tissue material, double workComplexity, double tissueQuantity, String color) {
         this.size = size;

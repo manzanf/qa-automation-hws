@@ -1,7 +1,7 @@
 package com.playtika.automation.clothes;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import static com.playtika.automation.clothes.Tissue.Type.mixed;
 import static com.playtika.automation.clothes.Tissue.Type.natural;
 
 public class Application {
-    private static final Logger logger = LogManager.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
         Fur alpacaFur = new Fur("Alpaca fur", natural, 103.64, animal, 23);
@@ -20,10 +20,10 @@ public class Application {
         Clothes dress = new Dress("S", viscose, 0.5, 2.1, "red");
         coat.sew();
         BigDecimal coatPrice = coat.calculatePrice();
-        logger.info("Price of the coat is: " + coatPrice);
+        logger.info("Price of the coat is: {}", coatPrice);
         ((Coat) coat).chooseMatchedBelt();
         dress.sew();
         BigDecimal dressPrice = dress.calculatePrice();
-        logger.info("Price of the dress is: " + dressPrice);
+        logger.info("Price of the dress is: {}", dressPrice);
     }
 }
